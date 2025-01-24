@@ -1,0 +1,67 @@
+/* Contenedor general */
+.container {
+   padding: 20px;
+   font-family: "Arial", sans-serif;
+   max-width: 900px;
+   margin-left: 35%;
+   align-content: center;
+ }
+ 
+ /* Tarjeta seleccionada */
+ .selected-card {
+   background: linear-gradient(135deg, #474a84, #8f94fb);
+   color: #fff;
+   border-radius: 25px;
+   padding: 20px;
+   text-align: center;
+   margin-bottom: 30px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ 
+ 
+ .selected-card .image {
+   width: 100%;
+   max-width: 500px;
+   height: auto;
+   border-radius: 10px;
+   margin: 15px 0;
+   border: 3px solid rgba(255, 255, 255, 0.5);
+ }
+ 
+ /* Lista de elementos */
+ .image-list {
+   list-style: none;
+   padding: 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   gap: 20px;
+ }
+ 
+ .image-list-item {
+   background: #96969c;
+   padding: 15px;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   font-weight: bold;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ 
+ .image-list-item:hover {
+   transform: translateY(-5px);  /*efecto de subir*/
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   background: #679681;
+   color: #303032;
+ }
+ 
+ /* Texto de carga */
+ .loading-text {
+   font-size: 1.2rem;
+   color: #555;
+   text-align: center;
+   margin-top: 20px;
+ }
+ 
