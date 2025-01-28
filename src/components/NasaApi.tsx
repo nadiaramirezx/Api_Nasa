@@ -11,7 +11,7 @@ interface NasaData {
 
 
 function NasaAPi() {
-  const apiKey = "UZHrDmWJ1Yoqq8ihKJo5FxHk5ImTkmqniwKTpQQj"; // Reemplaza 'TU_API_KEY' con tu clave real
+  const apiKey = "UZHrDmWJ1Yoqq8ihKJo5FxHk5ImTkmqniwKTpQQj"; 
   const url = `https://api.nasa.gov/EPIC/api/natural/images?api_key=${apiKey}`;
 
   // Definición de estados del componente
@@ -53,6 +53,7 @@ function NasaAPi() {
 
  return (
    <div className="container">
+      
    {/* Mostrar la tarjeta seleccionada */}
    {selectedImage && (
      <div className="selected-card">
@@ -70,7 +71,7 @@ function NasaAPi() {
      </div>
    )}
 
-   {/* Lista de elementos clickeables */}
+   {/* Lista de tarjetas */}
    <ul className="image-list">
      {images.length > 0 ? (
        images.map((image) => (
